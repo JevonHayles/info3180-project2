@@ -8,9 +8,6 @@ from flask_wtf.csrf import CSRFProtect
 app = Flask(__name__)
 app.config.from_object(Config)
 
-app = Flask(__name__)
-app.config.from_object(Config)
-
 csrf = CSRFProtect(app)
 
 db = SQLAlchemy(app)
